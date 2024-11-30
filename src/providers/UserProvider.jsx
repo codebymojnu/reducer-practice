@@ -4,7 +4,6 @@ import { userData } from "../data/userData";
 
 export default function UserProvider({ children }) {
   const [user, setUser] = useState(userData);
-
   return (
     <UserContext.Provider value={{ user, setUser }}>
       {children}
